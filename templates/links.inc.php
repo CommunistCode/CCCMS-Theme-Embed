@@ -8,14 +8,15 @@
 
 	$result = $_pageTools->getPageLinks();
 	
+  $firstClass = "navBarLinkFirst";
+
   foreach($result as $row) {
 
-    $firstClass = "navBarLinkFirst";
 	
 		if (!$row['linkOrder'] == 0) {
 		
 			if (PAGE_ID == $row['dContentID']) {
-				echo("<div class='navBarLinkSelected ".$firstClass."'>");
+				echo("<div class='navBarLink navBarLinkSelected ".$firstClass."'>");
 			} 
 			else {
 				echo("<div class='navBarLink ".$firstClass."'>");
@@ -34,6 +35,7 @@
 			}
 
 			echo("</div>");
+    
 
 		}
 

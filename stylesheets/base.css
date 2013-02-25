@@ -96,7 +96,6 @@ a {
 #page nav .navBarLink a {
   width: 85px;
   margin: 0px 0px 0px 0px;
-  border-left: solid 2px grey;
 }
 
 #page nav .navBarLinkSelected a {
