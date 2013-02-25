@@ -76,8 +76,7 @@ a {
 #page nav {
   margin: 0px 0px 20px 0px;
   height: 27px;
-  background-image: url("../images/navstripe.png");
-  background-position: -14px 0px;
+  background: rgba(0,0,0,0.5);
   border-radius: 5px;
   border: 1px solid black;
 }
@@ -98,12 +97,21 @@ a {
   margin: 0px 0px 0px 0px;
 }
 
+#page nav .navBarLink a:hover {
+  background: rgba(245,198,44,0.5);
+}
+
 #page nav .navBarLinkSelected a {
   color: black;
-  background-image: url("../images/navbackstripe.png");
   margin: -1px 0px 0px 0px;
+  background: rgba(255,255,255,0.4);
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+}
+
+#page nav .navBarLinkSelected a:hover {
+  color: black;
+  background: rgba(255,255,255,0.4);
 }
 
 #page nav .navBarLinkFirst a {
